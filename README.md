@@ -13,9 +13,9 @@ Our system resolves this issue by implementing **Multi-Criteria Decision-Making 
 ## ✨ Key Features
 
 * **Different approaches to determining metric weights:**
-** ***Direct rating:*** Allows you to enter weights directly on a scale from 1 to 10.
-** ***Pairwise comparison:*** Comparing pairs of metrics and subjectively determining their importance.
-** ***Objective Criteria Weighting (CRITIC):*** Uses inherent statistical data properties (variability and inter-criteria correlation) to transparently establish importance weights for each evaluation metric.
+*    ***Direct rating:*** Allows you to enter weights directly on a scale from 1 to 10.
+*    ***Pairwise comparison:*** Comparing pairs of metrics and subjectively determining their importance.
+*    ***Objective Criteria Weighting (CRITIC):*** Uses inherent statistical data properties (variability and inter-criteria correlation) to transparently establish importance weights for each evaluation metric.
 * **Transparent Outputs:** Generates a final, ranked list of XAI methods, minimizing human subjectivity and maximizing transparency.
 
 ---
