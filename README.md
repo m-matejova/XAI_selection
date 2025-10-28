@@ -1,7 +1,6 @@
 # 🤖 A Multi-Criteria Decision Making Approach for the Selection of Explainable AI Methods
 
 [![GitHub license](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/downloads/)
 
 ## 📝 Project Overview
 
@@ -15,7 +14,7 @@ Our system resolves this issue by implementing **Multi-Criteria Decision-Making 
 
 * **Different approaches to determining metric weights:**
 * ***Direct rating:*** Allows you to enter weights directly on a scale from 1 to 10.
-* ***Pairwise comparison:***Comparing pairs of metrics and subjectively determining their importance.
+* ***Pairwise comparison:*** Comparing pairs of metrics and subjectively determining their importance.
 * ***Objective Criteria Weighting (CRITIC):*** Uses inherent statistical data properties (variability and inter-criteria correlation) to transparently establish importance weights for each evaluation metric.
 * 
 * **Transparent Outputs:** Generates a final, ranked list of XAI methods, minimizing human subjectivity and maximizing transparency.
