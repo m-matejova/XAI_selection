@@ -4,7 +4,7 @@
 
 ## 📝 Project Overview
 
-This project presents an [Tool](https://xai-selection.streamlit.app/)for selecting the most appropriate Explainable Artificial Intelligence (XAI) method for a given application scenario. Traditional selection of XAI techniques (such as LIME, SHAP, or Grad-CAM) often relies on subjective intuition or anecdotal evidence, which is insufficient for high-stakes domains requiring rigorous validation.
+This project presents an **[Tool](https://xai-selection.streamlit.app/)** for selecting the most appropriate Explainable Artificial Intelligence (XAI) method for a given application scenario. Traditional selection of XAI techniques (such as LIME, SHAP, or Grad-CAM) often relies on subjective intuition or anecdotal evidence, which is insufficient for high-stakes domains requiring rigorous validation.
 
 Our system resolves this issue by implementing **Multi-Criteria Decision-Making (MCDM)** techniques, to systematically compare and rank XAI methods based on a set of **subjective and objective metrics**.
 
