@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-dff = pd.read_excel("Filtering all.xlsx")
+dff = pd.read_excel("Filtering_all.xlsx")
 
 st.title("Filtering methods")
 
@@ -37,4 +37,5 @@ if st.sidebar.button("Filter", icon=":material/search:", key="filter", width="st
 
 num_methods = len(dff)
 st.write("Number of filtered methods: ", num_methods)
+
 st.write(dff)
