@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-dff = pd.read_excel("https://github.com/m-matejova/XAI_selection/blob/main/Application/Filtering_all.xlsx", engine='openpyxl')
+dff = pd.read_excel("https://github.com/m-matejova/XAI_selection/raw/refs/heads/main/Application/Filtering_all.xlsx", engine='openpyxl')
 
 st.title("Filtering methods")
 
@@ -39,5 +39,6 @@ num_methods = len(dff)
 st.write("Number of filtered methods: ", num_methods)
 
 st.write(dff)
+
 
 
