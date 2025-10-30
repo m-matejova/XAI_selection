@@ -24,4 +24,4 @@ Our system resolves this issue by implementing **Multi-Criteria Decision-Making 
 
 ## 🚀 Usage
 
-The project includes all the necessary materials to reproduce the results mentioned in the study.
+The project includes all the necessary materials to reproduce the results mentioned in the study: M. Matejová, J. Paralič: A Multi-Criteria Decision Making Approach for the Selection of Explainable AI Methods
