@@ -20,20 +20,36 @@ if uploaded_file is not None:
     except Exception as e:
         st.error(f"An error occurred while loading the file: {e}")
 
-metrics_num = st.sidebar.number_input("ENTER A NUMBER OF METRICS", min_value=1, max_value=30)
-
-weights_form = st.sidebar.radio(
-    "METHOD FOR CALCULATING WEIGHTS",
-    ["Direct rating", "Pairwise comparison (subjective)", "CRITIC (objective)"], index=0
-)
-
-st.divider()
-
 if df is not None:
     data = df.iloc[:, -metrics_num:]
     metric_name = data.columns.tolist()
+    metrics_num = st.sidebar.number_input("ENTER A NUMBER OF METRICS", min_value=1, max_value=30)
     weights = []
 
+    st.sidebar.write("ENTER TYPES OF CRITERIA")
+    pills_results = []
+    if metrics_num > 0:
+        for i in metric_name:
+            selected_pills = st.sidebar.pills(
+                label=i,
+                key=f"types_{i}",
+                options=["Benefit", "Cost"],
+                default="Benefit",
+                help="Benefit: The higher, the better. Cost: The lower, the better."
+            )
+
+            if selected_pills== "Bonus":
+                value = 1
+            else:
+                value = -1
+            pills_results.append(value)
+            
+    weights_form = st.sidebar.radio(
+        "METHOD FOR CALCULATING WEIGHTS",
+        ["Direct rating", "Pairwise comparison (subjective)", "CRITIC (objective)"], index=0
+    )
+    st.divider()
+    
     if weights_form == "Direct rating":
         metric_values = {}
         for i in metric_name:
@@ -125,3 +141,4 @@ if df is not None:
         st.write('## Results')
 
         st.write(df)
+
