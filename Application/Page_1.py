@@ -16,7 +16,7 @@ Easily navigate the vast landscape of XAI methods. Our tool allows you to effici
 * **Interpretability Scope:** Choose between **Local** (explaining individual predictions) vs. **Global** (explaining overall model behavior).
 * **Model Dependence:** Filter for **Model-Agnostic** (works with any model) or **Model-Specific** techniques.
 * **Data Type Support:** Ensure the method handles your data (e.g., tabular, images, text).
-* **Output Format:** Filter by **Computational Complexity**, required **Fidelity**, and more.
+* **Output Format:** Select from **Visual**, **Numerical**, **Textual**, and **Rules**.
 
 ### 2. Decision Making: 
 
@@ -30,4 +30,5 @@ Define your own selection criteria (can be objective or subjective) and assign *
 The application processes your input weights and criteria to produce a clear, ranked list, highlighting the single best-suited method for your particular task context.
 
 """
+
 )
