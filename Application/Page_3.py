@@ -21,9 +21,9 @@ if uploaded_file is not None:
         st.error(f"An error occurred while loading the file: {e}")
 
 if df is not None:
+    metrics_num = st.sidebar.number_input("ENTER A NUMBER OF METRICS", min_value=1, max_value=30)
     data = df.iloc[:, -metrics_num:]
     metric_name = data.columns.tolist()
-    metrics_num = st.sidebar.number_input("ENTER A NUMBER OF METRICS", min_value=1, max_value=30)
     weights = []
 
     st.sidebar.write("ENTER TYPES OF CRITERIA")
@@ -141,4 +141,5 @@ if df is not None:
         st.write('## Results')
 
         st.write(df)
+
 
