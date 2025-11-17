@@ -1,4 +1,5 @@
 import streamlit as st
+import subprocess
 
 st.title(" 📶 A Multi-Criteria Decision Making Approach for the Selection of Explainable AI Methods")
 
@@ -29,6 +30,21 @@ Define your own selection criteria (can be objective or subjective) and assign *
 ### 4. Best Method Recommendation: 
 The application processes your input weights and criteria to produce a clear, ranked list, highlighting the single best-suited method for your particular task context.
 
+
 """
 
 )
+
+try:
+    # Použijeme pip freeze, ktorý dáva výstup vo formáte requirements.txt
+    result = subprocess.run(['pip', 'freeze'], capture_output=True, text=True, check=True)
+    package_list = result.stdout
+
+    st.subheader("Verzie nainštalovaných knižníc (pip freeze):")
+    st.code(package_list, language='text')
+
+except subprocess.CalledProcessError as e:
+    st.error(f"Nepodarilo sa získať zoznam balíkov: {e}")
+except FileNotFoundError:
+    st.error("Príkaz 'pip' nebol nájdený.")
+
