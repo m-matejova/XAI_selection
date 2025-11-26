@@ -43,7 +43,7 @@ if uploaded_file is not None:
 
 
 if df is not None:
-    metrics_num = st.sidebar.number_input("ENTER A NUMBER OF METRICS", min_value=1, max_value=30, value=8)
+    metrics_num = st.sidebar.number_input("ENTER A NUMBER OF METRICS", min_value=1, max_value=30, value=5)
     data = df.iloc[:, -metrics_num:]
     metric_name = data.columns.tolist()
     methods_name = df.iloc[:, 0]
@@ -73,7 +73,7 @@ if df is not None:
 
     weights_form = st.sidebar.radio(
         "METHOD FOR CALCULATING WEIGHTS",
-        ["Direct rating", "Pairwise comparison (subjective)", "CRITIC (objective)"], index=2
+        ["Direct rating", "Pairwise comparison (subjective)", "CRITIC (objective)"], index=0
     )
 
     if weights_form == "Direct rating":
@@ -640,3 +640,4 @@ if df is not None:
                 alternative_names,
                 num_alternatives
             )
+
