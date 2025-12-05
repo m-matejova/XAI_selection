@@ -21,7 +21,7 @@ Easily navigate the vast landscape of XAI methods. Our tool allows you to effici
 
 ### 2. Decision Making: 
 
-At the core of our tool is **10 MCDM methods**. 
+The tool automatically processes the decision matrix and evaluates it using a set of **10 MCDM techniques** to ensure the quality of the solution. **Borda Count** provides a balanced overall ranking of XAI methods.
 
 ### 3. Customizable Criteria and Weights: 
 
@@ -29,7 +29,7 @@ Define your own selection criteria (can be objective or subjective) and assign *
 
 ### 4. Best Method Recommendation: 
 The application processes your input weights and criteria to produce a clear, ranked list, highlighting the single best-suited method for your particular task context.
-
+**Sensitivity analysis** observe how the resulting order of methods changes when modifying the weights.
 
 """
 
@@ -47,5 +47,6 @@ except subprocess.CalledProcessError as e:
     st.error(f"Nepodarilo sa získať zoznam balíkov: {e}")
 except FileNotFoundError:
     st.error("Príkaz 'pip' nebol nájdený.")
+
 
 
