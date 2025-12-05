@@ -21,7 +21,7 @@ Easily navigate the vast landscape of XAI methods. Our tool allows you to effici
 
 ### 2. Decision Making: 
 
-At the core of our tool is the **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** method. TOPSIS is a renowned **Multi-Criteria Decision Making (MCDM)** technique that ranks XAI alternatives by measuring their distance from an ideal best solution and the farthest distance from a negative ideal solution.
+At the core of our tool is **10 MCDM methods**. 
 
 ### 3. Customizable Criteria and Weights: 
 
@@ -47,4 +47,5 @@ except subprocess.CalledProcessError as e:
     st.error(f"Nepodarilo sa získať zoznam balíkov: {e}")
 except FileNotFoundError:
     st.error("Príkaz 'pip' nebol nájdený.")
+
 
