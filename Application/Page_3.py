@@ -569,7 +569,6 @@ if df is not None:
             )
 
         with st.expander("Rank change of alternatives due to δ for method CODAS"):
-            st.write("aaaaaaaaaaaaaaaaaaa")
             plot_rank_change_sensitivity(
                 df_sensitivity,
                 "CODAS Rank",
@@ -640,4 +639,5 @@ if df is not None:
                 alternative_names,
                 num_alternatives
             )
+
 
