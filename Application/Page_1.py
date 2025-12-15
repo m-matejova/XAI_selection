@@ -35,18 +35,7 @@ The application processes your input weights and criteria to produce a clear, ra
 
 )
 
-try:
-    # Použijeme pip freeze, ktorý dáva výstup vo formáte requirements.txt
-    result = subprocess.run(['pip', 'freeze'], capture_output=True, text=True, check=True)
-    package_list = result.stdout
 
-    st.subheader("Verzie nainštalovaných knižníc (pip freeze):")
-    st.code(package_list, language='text')
-
-except subprocess.CalledProcessError as e:
-    st.error(f"Nepodarilo sa získať zoznam balíkov: {e}")
-except FileNotFoundError:
-    st.error("Príkaz 'pip' nebol nájdený.")
 
 
 
