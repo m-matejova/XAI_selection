@@ -1,0 +1,10 @@
+[theme]
+primaryColor="#3399ff" ##76ACAD 005DA6
+secondaryBackgroundColor = "#b8b8b8" #9A9A9A #818181
+borderColor="#b8b8b8"
+
+[theme.sidebar]
+primaryColor="#8067C7" ##76ACAD 005DA6
+backgroundColor="#b8b8b8"
+secondaryBackgroundColor = "#b3a4dd" #9A9A9A #818181 #FFFFFF
+borderColor="ffffff"
