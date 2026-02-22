@@ -27,7 +27,7 @@ if st.sidebar.button("Filter", icon=":material/search:", key="filter", width="st
     if pd.notna(portability_choice):
         dff = dff.loc[(dff['Portability'] == portability_choice)]
     if pd.notna(scope_choice):
-        dff = dff.loc[(dff['Scope'] == scope_choice)]
+        dff = dff[(dff['Scope'].str.contains(scope_choice)]
     if pd.notna(data_choice):
         dff = dff[dff['Input data type'].str.contains(data_choice)]
     if pd.notna(problem_choice):
@@ -39,6 +39,7 @@ num_methods = len(dff)
 st.write("Number of filtered methods: ", num_methods)
 
 st.dataframe(dff, height=35+len(dff)*35)
+
 
 
 
